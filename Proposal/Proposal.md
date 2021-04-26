@@ -1,7 +1,7 @@
 # Proposal
 
 ## Project idea:
-Games provide an interesting test bed for artificial, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples for algorithms that were put through their paces in games before applying them to different problems.
+Games provide an interesting test bed for artificial intelligence research, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples of algorithms that were put through their paces in games before applying them to different problems.
 
 Othello (also called Reversi) is a perfect information, zero-sum, two-player strategy game played on an 8x8 board, and has already been used in classical artificial intelligence research. The board stages are highly volatile, because each new move can change a large area of the board. Despite its simple rules, the game of Othello is not trivial, containing a number of legal positions of approximately $10^28$. The game tree itself has approximately $10^58$ nodes.[1]
 
@@ -22,12 +22,15 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 ## Impact and goals:
 
-- Demonstration of a quantum technique for (reinforcement learning?) implemented in a accessible format within a game
+- Demonstration of a quantum technique for (reinforcement learning?) implemented in an accessible format within a game
 
 - Convolutional Neuronal Networks in combination with quantum mechanics are novel to this approach, as they were only applied to image recognition.
 
 - comparison of error rates, noise mitigation (in gates and measurement?)?
+
 - execution speed of a quantum simulator running on a classical computer compared to a quantum computer running at IBM Q Experience (using the Big-O Notation or with pure computation time?)?
+
+- Explore the opportunities for mapping a the state of a complex game into the current Qiskit environment.
 
 
 ## Implementation plan: Timeline, tasks & resources (research papers, Qiskit libraries/modules...)
