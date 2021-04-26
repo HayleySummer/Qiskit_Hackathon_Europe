@@ -34,7 +34,7 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 ### Timeline:
 (It´s only a possible timeline)
-- *7 May - 14 May:* Basic Othello playable game. 
+- *7  May - 14 May:* Basic Othello playable game. 
 - *14 May - 28 May:* Implementation of the classical (AND/OR)? quantum algortihm. 
 - *28 May - 4 June:* UI.
 
