@@ -10,7 +10,7 @@ Othello is seen as a Markov Decision Problem in literature, marking an important
 We propose the implementation of a Quantum Othello game using quantum states together with classical machine learning techniques to create a (self-improving) computer opponent players can compete against.
 
 Quantum opponent creates winning strategies using (one of these?/all of them?):
-- CNNs [1]
+- QCNNs, mapping each spot on the board as it were pixels in the image recognition, assigning a weight to them depending on different dynamic or static rules (dynamic, static or limited depends on the approach). [1]
 - combining CNN with Monte Carlo Tree Search? (approach taken by Alpha Go)
 - Grover / Monte Carlo
 
@@ -24,21 +24,28 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 - demonstration of a quantum technique for (reinforcement learning?) implemented in a accessible format within a game
 
-- Convolutional Neuronal Networks in combination with quantum mechanics are novel to this approach
+- Convolutional Neuronal Networks in combination with quantum mechanics are novel to this approach, as they were only applied to image recognition.
 
-- comparison of error rates?
-- execution speed of a quantum simulator running on a classical computer compared to a quantum computer running at IBM Q Experience ?
+- comparison of error rates, noise mitigation (in gates and measurement?)?
+- execution speed of a quantum simulator running on a classical computer compared to a quantum computer running at IBM Q Experience (using the Big-O Notation or with pure computation time?)?
 
 
 ##Implementation plan: Timeline, tasks & resources (research papers, Qiskit libraries/modules...)
 
 Timeline:
-TBD
+(It´s only a possible timeline)
+7 May  - 14 May: Basic Othello playable game. 
+14 May - 28 May: Implementation of the classical (AND/OR)? quantum algortihm. 
+28 May - 4 June: UI.
 
 Tasks:
-TBD
+Creation and implementation of the Othello mecanics and the rules.
+Implementation of the classical algorithm.
+Implementation of the quantum algorithm.
+Desing the user interface.
+Implementation of the user interface.
 
-Qiskit libraries/modules: @Divyanshu
+Qiskit libraries/modules: Qiskit-Aer for getting the backend, Qiskit-Ignis for noise mitigation, Qiskit-Aqua or Qiskit-machine-learning for the implementation of the algorithm @Divyanshu
 
 
 
