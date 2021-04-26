@@ -46,7 +46,10 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 - Implementation of the user interface.
 
 ### Qiskit libraries/modules: 
-Qiskit-Aer for getting the backend, Qiskit-Ignis for noise mitigation, Qiskit-Aqua or [Qiskit-machine-learning](https://qiskit.org/documentation/machine-learning/apidocs/qiskit_machine_learning.html#qiskit-s-machine-learning-module-qiskit-machine-learning) for the implementation of Machine Learning algorithm, [Qisikit-algorithm-Grover](https://qiskit.org/documentation/stubs/qiskit.algorithms.Grover.html?highlight=grover#qiskit.algorithms.Grover) (If we use Grover's approach ) @divshacker
+-Qiskit-Aer for getting the backend 
+-Qiskit-Ignis for noise mitigation
+-Qiskit-Aqua or [Qiskit-machine-learning](https://qiskit.org/documentation/machine-learning/apidocs/qiskit_machine_learning.html#qiskit-s-machine-learning-module-qiskit-machine-learning) for the implementation of Machine Learning algorithm
+-[Qisikit-algorithm-Grover](https://qiskit.org/documentation/stubs/qiskit.algorithms.Grover.html?highlight=grover#qiskit.algorithms.Grover) (If we use Grover's approach )
 
 
 
