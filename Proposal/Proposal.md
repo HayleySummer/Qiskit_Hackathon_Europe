@@ -38,7 +38,9 @@ TBD
 Tasks:
 TBD
 
-Qiskit libraries/modules: @Divyanshu
+Qiskit libraries/modules: @divshacker
+- (qiskit_machine_learning)[https://qiskit.org/documentation/tutorials/algorithms/07_grover.html]
+- (qiskit.algorithm.Grover)[https://qiskit.org/documentation/stubs/qiskit.algorithms.Grover.html?highlight=grover#qiskit.algorithms.Grover]
 
 
 
