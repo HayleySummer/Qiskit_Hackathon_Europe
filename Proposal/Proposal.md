@@ -54,6 +54,6 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 
 ### Bibliography:
-[1] Paweł Liskowski, Wojciech Ja´skowski, Krzysztof Krawiec (2017) "Learning to Play Othello with Deep Neural
+- [1] Paweł Liskowski, Wojciech Ja´skowski, Krzysztof Krawiec (2017) "Learning to Play Othello with Deep Neural
 Networks." In: IEEE TRANSACTIONS ON COMPUTATIONAL INTELLIGENCE AND AI IN GAMES
-[2] Nees Jan van Eck, Michiel van Wezel (2005): Reinforcement Learning and its Application to Othello. In: Econometric Institute Report EI 2005-47
+- [2] Nees Jan van Eck, Michiel van Wezel (2005): Reinforcement Learning and its Application to Othello. In: Econometric Institute Report EI 2005-47
