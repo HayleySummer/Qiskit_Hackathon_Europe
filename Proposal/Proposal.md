@@ -5,7 +5,7 @@ Games provide an interesting test bed for artificial intelligence research, as t
 
 Othello (also called Reversi) is a perfect information, zero-sum, two-player strategy game played on an 8x8 board, and has already been used in classical artificial intelligence research. The board stages are highly volatile, because each new move can change a large area of the board. Despite its simple rules, the game of Othello is not trivial, containing a number of legal positions of approximately $10^28$. The game tree itself has approximately $10^58$ nodes.[1]
 
-Othello is seen as a Markov Decision Problem in literature, marking an important section of reinforcement learning [2].
+Othello is seen as a Markov Decision Problem in literature, marking an important section of reinforcement learning [2]. In addition, the mixed aplication of Convolutional Neural Nets result in a better accuracy predicting moves [3].
 
 We propose the implementation of a Quantum Othello game using quantum states together with classical machine learning techniques to create a (self-improving) computer opponent players can compete against.
 
@@ -66,3 +66,5 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 - [1] Paweł Liskowski, Wojciech Ja´skowski, Krzysztof Krawiec (2017) "Learning to Play Othello with Deep Neural
 Networks." In: IEEE TRANSACTIONS ON COMPUTATIONAL INTELLIGENCE AND AI IN GAMES
 - [2] Nees Jan van Eck, Michiel van Wezel (2005): Reinforcement Learning and its Application to Othello. In: Econometric Institute Report EI 2005-47
+- [3] Hlynur Davíð, H. (2017). Predicting expert moves in the game of Othello using fully convolutional neural networks (Dissertation). Retrieved from http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-210914
+
