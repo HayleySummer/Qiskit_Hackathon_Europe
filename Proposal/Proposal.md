@@ -60,9 +60,11 @@ Slide 2 - Impact and Goals
 
 - The proposal bring interest in the fields of quantum machine learning as we applied QCNNs, quantum algorithms because we used the Grover´s algorithm and in quantum games since we are making an IA to play against the user.
 
-- In the near-term we are trying to create a playable game with limited and reduced rules. This rules could be based on quantum or hybrid algorithms.
+- In the near-term we are trying to create a playable game with limited and reduced rules. This rules could be based on quantum or hybrid algorithms. 
 
 - In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
+
+- Also the proposal shows an approach that can realistically implement a working prototype within the given time frame of 4 weeks. 
 
 ## Criterion 3 - Implementation
 Weight: 30.00%
