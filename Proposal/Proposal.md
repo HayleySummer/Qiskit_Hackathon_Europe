@@ -1,7 +1,7 @@
 # Proposal
 
 
-#Judging Criterion 1 - Excellence
+## Judging Criterion 1 - Excellence
 Weight: 40.00%
 Compared to what you’ve seen before, how original/unique is this proposal? 
 How relevant is the research question and project?
@@ -33,7 +33,7 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 
 
-#Judging Criterion 2 - Impact
+## Judging Criterion 2 - Impact
 Weight: 30.00%
 How well does the proposal advance research and open source science in the field of quantum computing? 
 How useful is this idea? Does it have prospects for future development? 
@@ -64,7 +64,7 @@ Slide 2 - Impact and Goals
 
 - In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
 
-#Criterion 3 - Implementation
+## Criterion 3 - Implementation
 Weight: 30.00%
 How feasible and effective is the work plan within the timeframe considering the allocation of tasks and resources?
 How coherent and structured is the proposal? 
