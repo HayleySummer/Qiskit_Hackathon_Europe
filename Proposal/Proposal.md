@@ -52,19 +52,18 @@ Slide 2 - Impact and Goals
 
 - Convolutional Neuronal Networks in combination with quantum mechanics are novel to this approach, as they were only applied to image recognition.
 
-- comparison of error rates, noise mitigation (in gates and measurement?)?
+- Explore the opportunities for mapping the state of a complex game into the current Qiskit environment.
 
-- execution speed of a quantum simulator running on a classical computer compared to a quantum computer running at IBM Q Experience (using the Big-O Notation or with pure computation time?)?
-
-- Explore the opportunities for mapping a the state of a complex game into the current Qiskit environment.
-
-- The proposal bring interest in the fields of quantum machine learning as we applied QCNNs, quantum algorithms because we used the Grover´s algorithm and in quantum games since we are making an IA to play against the user.
+- The proposal brings interest in the fields of quantum machine learning as we applied QCNNs, quantum algorithms because we used the Grover´s algorithm and in quantum games since we are making an AI to play against the user.
 
 - In the near-term we are trying to create a playable game with limited and reduced rules. This rules could be based on quantum or hybrid algorithms. 
 
 - In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
 
 - Also the proposal shows an approach that can realistically implement a working prototype within the given time frame of 4 weeks. 
+- (optional?) comparison of error rates, noise mitigation (in gates and measurement?)?
+
+- (optional?) Execution speed of a quantum simulator running on a classical computer compared to a quantum computer running at IBM Q Experience (using the Big-O Notation or with pure computation time?)?
 
 ## Criterion 3 - Implementation
 Weight: 30.00%
@@ -82,15 +81,15 @@ Slide 3 - Implementation Plan: Timeline, Tasks, & Resources
 (It´s only a possible timeline)
 - *7  May - 14 May:* Basic Othello playable game & UI 
 - *14 May - 28 May:* Implementation of the classical (AND/OR)? quantum algorithm. -> Start this simultaneuosly with the Othello implementation?
-- *28 May - 4 June:* Testing/Adjustments & finalizing project report)
+- *28 May - 4 June:* Testing and adjustments & finalizing project report
 
 Skills: 
-(Q)ML -> David, Enda, Nouhaila
-Qiskit -> Divyanshu, Barbora, ... ?
-Python Games -> Barbora, ?
-UI -> Team
-Testing / Adjustments -> Team 
-Project Report -> Team 
+- (Q)ML -> David, Enda, Nouhaila
+- Qiskit -> Divyanshu, Barbora, ... ?
+- Python Games -> Barbora, ?
+- UI -> Team
+- Testing / Adjustments -> Team 
+- Project Report -> Team 
 
 ### Tasks:
 - Creation and implementation of the Othello mechanics and the rules.
