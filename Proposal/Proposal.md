@@ -32,6 +32,12 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 - Explore the opportunities for mapping a the state of a complex game into the current Qiskit environment.
 
+- The proposal bring interest in the fields of quantum machine learning as we applied QCNNs, quantum algorithms because we used the Grover´s algorithm and in quantum games since we are making an IA to play against the user.
+
+- In the near-term we are trying to create a playable game with limited and reduced rules. This rules could be based on quantum or hybrid algorithms.
+
+- In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
+
 
 ## Implementation plan: Timeline, tasks & resources (research papers, Qiskit libraries/modules...)
 
