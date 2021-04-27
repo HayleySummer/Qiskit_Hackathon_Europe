@@ -1,6 +1,11 @@
 # Proposal
 
 
+#Judging Criterion 1 - Excellence
+Weight: 40.00%
+Compared to what you’ve seen before, how original/unique is this proposal? 
+How relevant is the research question and project?
+
 Slide 1 - Project Idea
 - Which field of quantum computing is your proposal about? 
 - Which is the topic of your proposal? 
@@ -27,6 +32,14 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 - showing problem solving on 8x8 board, rather than a 4x4 board
 
 
+
+#Judging Criterion 2 - Impact
+Weight: 30.00%
+How well does the proposal advance research and open source science in the field of quantum computing? 
+How useful is this idea? Does it have prospects for future development? 
+Will this project help the community at large? Will this project spark interest in the quantum computing community?
+
+
 Slide 2 - Impact and Goals
 - What would you like to achieve with this proposal? 
 - Which value does this proposal bring to the specific field of interest (QML/ quantum games...) and to the wider quantum computing field? 
@@ -51,6 +64,10 @@ Slide 2 - Impact and Goals
 
 - In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
 
+#Criterion 3 - Implementation
+Weight: 30.00%
+How feasible and effective is the work plan within the timeframe considering the allocation of tasks and resources?
+How coherent and structured is the proposal? 
 
 Slide 3 - Implementation Plan: Timeline, Tasks, & Resources
 - What are the phases/steps of your project? Build the timeline of your project based on the deadline for each phase.
