@@ -78,19 +78,17 @@ Slide 3 - Implementation Plan: Timeline, Tasks, & Resources
 
 ### Timeline:
 (It´s only a possible timeline)
-- *7  May - 14 May:* Basic Othello playable game. 
+- *7  May - 14 May:* Basic Othello playable game & UI 
 - *14 May - 28 May:* Implementation of the classical (AND/OR)? quantum algorithm. -> Start this simultaneuosly with the Othello implementation?
-- *28 May - 4 June:* UI.
-- Testing/Adjustments?
-- Writing of paper? 
+- *28 May - 4 June:* Testing/Adjustments & finalizing project report)
 
 Skills: 
 (Q)ML -> David, Enda, Nouhaila
-Qiskit -> Divyanshu, Barbora, ...
-Python Games -> Barbora
+Qiskit -> Divyanshu, Barbora, ... ?
+Python Games -> Barbora, ?
 UI -> Team
 Testing / Adjustments -> Team 
-Paper -> Team 
+Project Report -> Team 
 
 ### Tasks:
 - Creation and implementation of the Othello mechanics and the rules.
