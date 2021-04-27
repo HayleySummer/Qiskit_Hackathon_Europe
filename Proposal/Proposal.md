@@ -1,5 +1,12 @@
 # Proposal
 
+
+Slide 1 - Project Idea
+- Which field of quantum computing is your proposal about? 
+- Which is the topic of your proposal? 
+- Which question/s do you want to address? 
+- Provide a technical description of the proposal. 
+
 ## Project idea:
 Games provide an interesting test bed for artificial intelligence research, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples of algorithms that were put through their paces in games before applying them to different problems.
 
@@ -20,6 +27,12 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 - showing problem solving on 8x8 board, rather than a 4x4 board
 
 
+Slide 2 - Impact and Goals
+- What would you like to achieve with this proposal? 
+- Which value does this proposal bring to the specific field of interest (QML/ quantum games...) and to the wider quantum computing field? 
+- How novel is your proposal? 
+- Which are the near-term and long-term goals for this proposal?   
+
 ## Impact and goals:
 
 - Demonstration of a quantum technique for (reinforcement learning?) implemented in an accessible format within a game
@@ -38,6 +51,11 @@ Quantum opponent creates winning strategies using (one of these?/all of them?):
 
 - In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
 
+
+Slide 3 - Implementation Plan: Timeline, Tasks, & Resources
+- What are the phases/steps of your project? Build the timeline of your project based on the deadline for each phase.
+- Which skills are required for each phase? Who in your team has these skills? How do you plan to divide the tasks within your team? 
+- Which resources do you plan to use for developing your project? (Qiskit libraries/modules, game engines, research papers references, etc) 
 
 ## Implementation plan: Timeline, tasks & resources (research papers, Qiskit libraries/modules...)
 
