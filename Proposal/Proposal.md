@@ -64,6 +64,8 @@ Slide 3 - Implementation Plan: Timeline, Tasks, & Resources
 - *7  May - 14 May:* Basic Othello playable game. 
 - *14 May - 28 May:* Implementation of the classical (AND/OR)? quantum algortihm. 
 - *28 May - 4 June:* UI.
+- Testing/Adjustments?
+- Writing of paper? 
 
 ### Tasks:
 - Creation and implementation of the Othello mechanics and the rules.
@@ -71,6 +73,9 @@ Slide 3 - Implementation Plan: Timeline, Tasks, & Resources
 - Implementation of the quantum algorithm.
 - Desing the user interface.
 - Implementation of the user interface.
+- Iterative testing and adjustments
+- Documentation and Presentation
+- Video? 
 
 ### Qiskit libraries/modules: 
 - [Qiskit-Aer](https://qiskit.org/documentation/apidoc/aer.html) for getting the backend 
