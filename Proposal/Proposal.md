@@ -10,7 +10,7 @@ Slide 1 - Project Idea
 ## Project idea:
 Games provide an interesting test bed for artificial intelligence research, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples of algorithms that were put through their paces in games before applying them to different problems.
 
-Othello (also called Reversi) is a perfect information, zero-sum, two-player strategy game played on an 8x8 board, and has already been used in classical artificial intelligence research. The board stages are highly volatile, because each new move can change a large area of the board. Despite its simple rules, the game of Othello is not trivial, containing a number of legal positions of approximately $10^28$. The game tree itself has approximately $10^58$ nodes.[1]
+Othello (also called Reversi) is a perfect information, zero-sum, two-player strategy game played on an 8x8 board, and has already been used in classical artificial intelligence research. The board stages are highly volatile, because each new move can change a large area of the board. Despite its simple rules, the game of Othello is not trivial, containing a number of legal positions of approximately 10<sup>28</sup>. The game tree itself has approximately 10<sup>58</sup> nodes.[1]
 
 Othello is seen as a Markov Decision Problem in literature, marking an important section of reinforcement learning [2]. In addition, the mixed aplication of Convolutional Neural Nets result in a better accuracy predicting moves [3].
 
