@@ -45,11 +45,11 @@ Slide 2 - Impact and Goals
 
 ## Impact and goals:
 
-- Demonstration of a quantum technique for (reinforcement learning?) implemented in an accessible format within a game
+- Demonstration of a quantum machine learning technique for reinforcement learning implemented in an accessible format within a game
 
-- Convolutional Neuronal Networks in combination with quantum mechanics are novel to this approach, as they were only applied to image recognition.
+- Convolutional Neural Networks in combination with quantum mechanics are novel to this approach, as they were only applied to image recognition.
 
-- Explore the opportunities for mapping the state of a complex game into the current Qiskit environment.
+- Explore the opportunities for mapping the state and actions of a complex game into the current Qiskit environment.
 
 - The proposal brings interest in the fields of quantum machine learning as we applied QCNNs, quantum algorithms because we used the Grover´s algorithm and in quantum games since we are making an AI to play against the user.
 
