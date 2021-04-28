@@ -19,12 +19,9 @@ Othello (also called Reversi) is a perfect information, zero-sum, two-player str
 
 Othello is seen as a Markov Decision Problem in literature, marking an important section of reinforcement learning [2]. In addition, the mixed aplication of Convolutional Neural Nets result in a better accuracy predicting moves [3].
 
-We propose the implementation of a Quantum Othello game using quantum states together with classical machine learning techniques to create a (self-improving) computer opponent players can compete against.
+We propose the implementation of a Quantum Othello game using quantum computing together with classical machine learning techniques to create a (self-improving) computer opponent players can compete against.
 
-Quantum opponent creates winning strategies using (one of these?/all of them?):
-- QCNNs, mapping each spot on the board as it were pixels in the image recognition, assigning a weight to them depending on different dynamic or static rules (dynamic, static or limited depends on the approach). [1]
-- combining CNN with Monte Carlo Tree Search? (approach taken by Alpha Go)
-- Grover / Monte Carlo
+The Quantum opponent creates winning strategies using a Variational Quantum Circuit for Deep Reinforcement Learning.  The implementation will utilise PyTorch to train a Deep Q-Learning neural network with a Quantum Computing based hidden layer.  
 
 
 ## Peculiarity of the project:
