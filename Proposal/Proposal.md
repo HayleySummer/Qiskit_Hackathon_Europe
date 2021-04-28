@@ -47,15 +47,15 @@ Slide 2 - Impact and Goals
 
 - Demonstration of a quantum machine learning technique for reinforcement learning implemented in an accessible format within a game
 
-- Convolutional Neural Networks in combination with quantum mechanics are novel to this approach, as they were only applied to image recognition.
+- Provide an analysis of encoding the state of a complex game in a format suitable for use in current Quantum ML environments. 
 
-- Explore the opportunities for mapping the state and actions of a complex game into the current Qiskit environment.
+- Convolutional Neural Networks in combination with quantum mechanics are novel to this approach where the game state and action space is large.
 
-- The proposal brings interest in the fields of quantum machine learning as we applied QCNNs, quantum algorithms because we used the Grover´s algorithm and in quantum games since we are making an AI to play against the user.
+- The proposal brings interest in the fields of quantum machine learning and in quantum games since we are making an AI to play against the user.  
 
-- In the near-term we are trying to create a playable game with limited and reduced rules. This rules could be based on quantum or hybrid algorithms. 
+- In the near-term we will create a playable game and associated Quantum ML Agent. 
 
-- In the long-term we will be able to finish a complete game with at least the same amount of rules we have in the classical algorithm and with better performance and efficiency.
+- In the long-term the Quantum ML agent can be improved for better performance and efficiency.  This work will also provide a starting point for others to advance the implemention of Quantum Machine Learning Agents using Reinforcement Learning. 
 
 - Also the proposal shows an approach that can realistically implement a working prototype within the given time frame of 4 weeks. 
 - (optional?) comparison of error rates, noise mitigation (in gates and measurement?)?
