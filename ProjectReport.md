@@ -1,20 +1,21 @@
-#Project Report
+# Project Report
 
-##Introduction
-###RL Part:
+## Introduction
+
+### RL Part:
 We don't want to hard-code knowledge about the environment and the best action to take in each case; that would be too much work and would become useless at the slightest change in the environment. We need methods that allow the agent to learn by itself to find the best moves to achieve the best cumulative reward.
 Reinforcement learning offers a solution here that differs from supervised and unsupervised learning methods. There are no predefined labels as in supervised learning. However, the reward system also leaves us not completely blind as in unsupervised learning. Rewards can be positive, negative or neutral. While the agent observes the rewards and relates them to the action performed, it can learn how to perform actions better.
 
-###Quantum Part:
+### Quantum Part:
 Hybrid Quantum Classical Neural Network
 
-###Aim of the Project:
+### Aim of the Project:
 - Show feasibility of using Deep Q-Reinforcement Learning powered by Quantum Circuits using a Game setting
 - Provide modular Framework for future Quantum ML Tests in an environment with fixed rules for the Quantum Community
 
 
-##Background -> needed?
-###RL Part
+## Background -> needed?
+### RL Part
 Deep Q- Networks is a popular method for computer games. The paper https://www.nature.com/articles/nature14236 was an important step in reinforcement learning, because it demonstrated that it is possible to use non-linear approximations with this method. This evidence led to a great deal of interest in the field of Q-learning in particular and reinforcement learning in general-
 Deep-Q-Learning. Deep reinforcement learning reached a milestone in 2015 when AlphaGo, a computer program trained with deep Reinforcement Learning became the first computer program to beat a human professional Go player on a full-sized 19×19 board.
 For the game of Othello two Deep-Q-Learning methods are applicable:
@@ -30,14 +31,12 @@ Q-Learning Theory:
 Is a technique that determines, based on a state-action-value-(reward) function, the value of performing an action or the quality of a state-action combination. The so-called Q-function takes as input the current state and a possible action and calculates the potential reward for this action and all following actions. More precisely, this is called *Temporal Difference Learning*, which adjusts the estimate of the future total reward per step.
 
 
-###The Quantum Part with RL?
+### The Quantum Part with RL?
 
 
-##Implementation
+## Implementation
 
-###Key Classes and Data Structure
-
-
+### Key Classes and Data Structure
 
 ### CNN
 
@@ -59,9 +58,9 @@ Environment: provides the arena for the agent and determines what rewards an age
 
 The CNN needs a certain amount of data to learn, so the agent will perform random actions at the beginning. Once the array is filled, we start learning.
 
-##Results
+## Results
 
 
-##Further Work
+## Further Work
 Proposal:
 The general applicability and flexibility of reinforcement learning comes at a price. The biggest obstacle to reinforcement learning in this game setting is that rewards for an action may be delayed considerably. In Othello, as well as in chess, a single strong move in the middle of the game can be game-changing. In learning, we need to recognize such things, which can be difficult when we focus purely on the game play and actions. In future Work the sum of future discounted rewards should be taken more into consideration.
