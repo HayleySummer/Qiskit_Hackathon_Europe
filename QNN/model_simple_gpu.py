@@ -98,35 +98,7 @@ class DQN(nn.Module):
 
     def __init__(self, h, w, outputs):
         super(DQN, self).__init__()
-        # We did a lot of experimentation with model sizes and types, so we decided to leave some
-        # of our attempts here
-        #1
-        # self.conv1 = nn.Conv2d(1, 16, kernel_size=5, stride=2)
-        # self.bn1 = nn.BatchNorm2d(16)
-        # self.conv2 = nn.Conv2d(16, 32, kernel_size=5, stride=2)
-        # self.bn2 = nn.BatchNorm2d(32)
-        # self.conv3 = nn.Conv2d(32, 32, kernel_size=5, stride=2)
-        # self.bn3 = nn.BatchNorm2d(32)
 
-        #2
-        # # Number of Linear input connections depends on output of conv2d layers
-        # # and therefore the input image size, so compute it.
-        # def conv2d_size_out(size, kernel_size = 5, stride = 2):
-        #     return (size - (kernel_size - 1) - 1) // stride  + 1
-        # convw = conv2d_size_out(conv2d_size_out(conv2d_size_out(w)))
-        # convh = conv2d_size_out(conv2d_size_out(conv2d_size_out(h)))
-        # linear_input_size = convw * convh * 32
-
-
-        #3
-        # self.conv1 = nn.Conv2d(1, 128, kernel_size=2, stride=1, padding=1)
-        # self.bn1 = nn.BatchNorm2d(128)
-        # self.conv2 = nn.Conv2d(128, 256, kernel_size=5, stride=1, padding=1)
-        # self.bn2 = nn.BatchNorm2d(256)
-        # self.fcl1 = nn.Linear(12544,5000)
-        # self.fcl2 = nn.Linear(5000, 64)
-
-        #4
         qi = QuantumInstance(Aer.get_backend('statevector_simulator'))
 
         num_inputs=4
@@ -141,67 +113,19 @@ class DQN(nn.Module):
         parity = lambda x: '{:b}'.format(x).count('1') % num_inputs
         output_shape =num_inputs # parity = 0, 1
 
-
-        #qnn = TwoLayerQNN(4, feature_map, ansatz, exp_val=AerPauliExpectation(), quantum_instance=qi)
         qnn = CircuitQNN(qc, input_params=feature_map.parameters, weight_params=ansatz.parameters,
                 interpret=parity, output_shape=output_shape, quantum_instance=qi)
 
         #set up PyTorch Module
         initial_weights = 0.1*(2*np.random.rand(qnn.num_weights) - 1)
 
-
         # Our final network choice. It is wide enough to capture a lot of detail but not too
         # large to have problems with vanishing gradients on such a small sample size
         self.conv1 = nn.Conv2d(1, 256, kernel_size=2, stride=1, padding=1)
         self.bn1 = nn.BatchNorm2d(256)
         self.fcl1 = nn.Linear(20736,10000)
-        #self.fll2 = nn.Linear(10000, 64)
         self.fcl2 = nn.Linear(10000, num_inputs)
-        #self.qnn = TorchConnector(qnn)
         self.qnn = TorchConnector(qnn, initial_weights)
-        #self.up1 = nn.Upsample(scale_factor=2, mode='nearest')
-
-
-        #5
-        # Big model
-        # self.conv1 = nn.Conv2d(1, 16, kernel_size=2, stride=1, padding=1)
-        # self.bn1 = nn.BatchNorm2d(16)
-        # self.conv2 = nn.Conv2d(16, 256, kernel_size=2, stride=1, padding=1)
-        # self.bn2 = nn.BatchNorm2d(256)
-        # self.conv3 = nn.Conv2d(256, 256, kernel_size=2, stride=1, padding=1)
-        # self.bn3 = nn.BatchNorm2d(256)
-        # self.fcl1 = nn.Linear(30976,10000)
-        # self.fcl2 = nn.Linear(10000, 1000)
-        # self.fcl3 = nn.Linear(1000,64)
-
-        #6
-        # #Medium model. - won 43% (once)
-        # self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1)
-        # self.bn1   = nn.BatchNorm2d(16)
-        # # self.conv2 = nn.Conv2d(16, 256, kernel_size=3, stride=1, padding=1)
-        # # self.bn2   = nn.BatchNorm2d(256)
-        # self.fc1   = nn.Linear(1024, 5        # x = F.relu(self.bn1(self.conv1(x)))
-        # x = F.relu(self.bn2(self.conv2(x)))
-        # x = x.view(-1, 12544)
-        # x = F.relu(self.fcl1(x))
-        # x = F.log_softmax(self.fcl2(x))12)
-        # self.fc2   = nn.Linear(512, 256)
-        # self.fc3   = nn.Linear(256, 64)
-
-        #7
-        # self.conv1 = nn.Conv2d(1, 64, kernel_size=2, stride=1, padding=1)
-        # self.bn1 = nn.BatchNorm2d(64)
-        # self.fcl1 = nn.Linear(5184,2000)
-        # self.fcl2 = nn.Linear(2000, 64)
-
-        #8
-        # Puny
-        # self.conv1 = nn.Conv2d(1, 16, kernel_size=2, stride=1, padding=1)
-        # self.bn1 = nn.BatchNorm2d(16)
-        # # self.fcl1 = nn.Linear(1296,64)
-
-        # self.fcl1 = nn.Linear(1296,500)
-        # self.fcl2 = nn.Linear(500, 64)
 
     def forward(self, x):
 
@@ -268,7 +192,7 @@ def select_action(state, env):
         math.exp(-1. * steps_done / EPS_DECAY)
     steps_done += 1
 
-    # Decide whether to use the model or a ransom choice to exlore
+    # Decide whether to use the model or a random choice to exlore
     # The more iterations that are done, the more it relies on the network to choose
     if sample > eps_threshold:
         with torch.no_grad():
@@ -450,13 +374,6 @@ torch.save(policy_net.state_dict(), 'state_dict_final.pyt')
 
 # Record loss data
 print(LOSSES)
-
-
-
-
-
-
-
 
 
 # Stuff below here is for analysis only!!! 
