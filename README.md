@@ -1,4 +1,6 @@
-# Qiskit_Hackathon_Europe
+# Beat the Quantum Machine: 
+
+Short Description of the Project and Repo's Structure
 
 The final submission should include:
 
