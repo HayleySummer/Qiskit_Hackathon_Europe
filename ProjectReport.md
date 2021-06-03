@@ -19,7 +19,7 @@ Hybrid Quantum Classical Neural Network
 
 ## Background -> needed?
 ### RL Part
-Deep Q- Networks is a popular method for computer games. The paper https://www.nature.com/articles/nature14236 was an important step in reinforcement learning, because it demonstrated that it is possible to use non-linear approximations with this method. This evidence led to a great deal of interest in the field of Q-learning in particular and reinforcement learning in general-
+Deep Q- Networks is a popular method for computer games. The paper https://www.nature.com/articles/nature14236 was an important step in reinforcement learning, because it demonstrated that it is possible to use non-linear approximations with this method. This evidence led to a great deal of interest in the field of Q-learning in particular and reinforcement learning in general 
 Deep-Q-Learning. Deep reinforcement learning reached a milestone in 2015 when AlphaGo, a computer program trained with deep Reinforcement Learning became the first computer program to beat a human professional Go player on a full-sized 19×19 board.
 For the game of Othello two Deep-Q-Learning methods are applicable:
 
@@ -43,7 +43,11 @@ Is a technique that determines, based on a state-action-value-(reward) function,
 
 ### CNN
 
-Hybrid Quantum Classical Neural Network
+We have decided to build on the shoulders of giants and therefore looked for a neural network approach that we can suitably extend with a quantum layer in order to create a hybrid Quantum Classical Neural Network. After a thorough research we decided to use the approach of [1], because it used exactly the structure that is suitable for Othello and could be used in Deep Q Reinforcement Learning.  
+The architectural structure is shown in figure X. 
+
+We wanted to extend this neural network with a quantum layer in order to use the computational power of the quantum computers to speed up the computation on the one hand and to investigate the results that this hybrid quantum network should deliver on the other hand. 
+
 
 Parameters:
 - Input layer = current state + action + reward + next state ?
@@ -53,6 +57,7 @@ Parameters:
 - Quantum Layer? = VQC -> Input 16 Outputs from Fulled Connected Layer mapped to 16 Qubits?
 - Output layer = optimisation/update of parameters, (either a Q-value per action or a final Q-value?) -> returning value to the game
 - Learning algorithm?
+
 
 Controller: controls the interaction between the agent and the environment
 Agent: performs actions and has a "Q table" that represents his memory/experiences
@@ -67,3 +72,6 @@ The CNN needs a certain amount of data to learn, so the agent will perform rando
 ## Further Work
 Proposal:
 The general applicability and flexibility of reinforcement learning comes at a price. The biggest obstacle to reinforcement learning in this game setting is that rewards for an action may be delayed considerably. In Othello, as well as in chess, a single strong move in the middle of the game can be game-changing. In learning, we need to recognize such things, which can be difficult when we focus purely on the game play and actions. In future Work the sum of future discounted rewards should be taken more into consideration.
+
+#Bibliography
+[1] https://github.com/colinmsnow/othelloAI
