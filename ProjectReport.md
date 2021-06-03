@@ -67,11 +67,14 @@ Environment: provides the arena for the agent and determines what rewards an age
 The CNN needs a certain amount of data to learn, so the agent will perform random actions at the beginning. Once the array is filled, we start learning.
 
 ## Results
-
+The approach showed that is is possible to start on classical machine learning techniques and combine them with Qiskit. In our approach, we mainly faced the problem of dimension mismatching. The backpropagation of the neural network did not cope with the answers of the quantum layer. Here, a different vector space was returned than the classical network would expect. This problem persists and could not be solved by the end of the project. 
 
 ## Further Work
 Proposal:
 The general applicability and flexibility of reinforcement learning comes at a price. The biggest obstacle to reinforcement learning in this game setting is that rewards for an action may be delayed considerably. In Othello, as well as in chess, a single strong move in the middle of the game can be game-changing. In learning, we need to recognize such things, which can be difficult when we focus purely on the game play and actions. In future Work the sum of future discounted rewards should be taken more into consideration.
+Also, the debugging in novel hybrid approaches, as we describe here, has to be done thoroughly and is therefore time-consuming. At this point, it is definitivly worthwhile to go troubleshooting again to bring the Quantum Opponent to life.
+
+Also more finding 
 
 #Bibliography
 [1] https://github.com/colinmsnow/othelloAI
