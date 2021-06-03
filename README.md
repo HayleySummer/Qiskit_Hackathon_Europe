@@ -12,8 +12,8 @@ The final submission should include:
 
 - [ ] Scientific report -> 2-3 pages in pdf format, including:
  - [ ]  Motivation (Which research questions do you want to address with this project?)
- - [ ]  Implementation (What was your strategy to answer those questions? How did you divide the tasks among your teammates?)
- - [ ]  Project results (What did you achieve?)
+ - [X ]  Implementation (What was your strategy to answer those questions? How did you divide the tasks among your teammates?)
+ - [X ]  Project results (What did you achieve?)
  - [ ]  Impact-outlook (Which value does this project bring? What are the future perspectives? What still needs to be done?)
  - [ ] GitHub repo: Structured & easily readable.
 
