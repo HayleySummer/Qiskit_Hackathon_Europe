@@ -1,9 +1,14 @@
-Run it on a Linux Machine 
+This is a short summary on how to run the QNN: 
 
-Dependencies you need to install beforehand 
+Prerequisits: 
+
+Run it on a Linux Machine (preferebaly, the .c file causes some issues on Mac)
+
+Dependencies you need to install beforehand:
 
 pip install <dependency>
 
+Dependencies: 
 sklearn
 matplotlib
 torch 
