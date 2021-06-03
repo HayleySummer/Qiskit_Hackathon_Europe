@@ -4,7 +4,7 @@ Written by Colin Snow and Meg Ku
 Structure adapted from Pytorch reinforcement q learning tutorial:
 https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 '''
-
+#####################################################################################################
 import sys
 sys.path.append(".")
 
@@ -42,7 +42,7 @@ from qiskit.circuit import Parameter
 from qiskit.circuit.library import RealAmplitudes, ZZFeatureMap
 from qiskit_machine_learning.neural_networks import CircuitQNN, TwoLayerQNN
 from qiskit_machine_learning.connectors import TorchConnector
-
+########################################################################################################
 env = crunner.Move() #Othello game
 
 # set up matplotlib
@@ -50,12 +50,13 @@ is_ipython = 'inline' in matplotlib.get_backend()
 if is_ipython:
     from IPython import display
 
-# if gpu is to be used
+# If gpu is to be used
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 Transition = namedtuple('Transition',
                         ('state', 'action', 'next_state', 'reward'))
-
+                        
+#########################################################################################################
 class ReplayMemory(object):
     '''
     Stores (state, action, next state, and reward) for every move that has ever been taken
@@ -91,7 +92,7 @@ class ReplayMemory(object):
             self.memory[len(self.memory)-1-i] = Transition(self.memory[len(self.memory)-1-i].state, \
                 self.memory[len(self.memory)-1-i].action, self.memory[len(self.memory)-1-i].next_state,\
                 torch.tensor([[new_reward]], device=device, dtype=torch.long))
-
+################################################################################################################
 class DQN(nn.Module):
     ''' Our neural network class which takes in a board and predicts 
     the expected reward for each move that it could take '''
@@ -138,8 +139,7 @@ class DQN(nn.Module):
         x = self.qnn(x)
 
         return x
-
-
+##############################################################################################################
 def get_screen():
     """Returns the current board in an 8 by 8 pytorch tensor"""
     screen = env.state()[0]
@@ -148,9 +148,10 @@ def get_screen():
     screen = torch.from_numpy(screen)
     # Resize, and add a batch dimension (BCHW)
     return screen.unsqueeze(0).to(device)   # Removed resize because screen is already small
-
+##############################################################################################################
 env.reset()
-
+###########################################
+# Initialization 
 BATCH_SIZE = 512
 GAMMA = 0.999
 EPS_START = .9
@@ -180,7 +181,7 @@ optimizer = optim.Adam(policy_net.parameters(), lr= 1e-10)
 memory = ReplayMemory(100000)
 
 steps_done = 0
-
+#################################################################################################################
 def select_action(state, env):
     """Model is selecting action based on max of available.
     we want it to select the max of the board, and not proceed until it chooses one of the available ones """
@@ -239,6 +240,7 @@ def select_action(state, env):
         # Return a random legal move
         return torch.tensor([[random.choice(env.state()[2])//segmentSize]], device=device, dtype=torch.long)
 
+######################################################################################################################
 
 def optimize_model():
 
@@ -291,7 +293,7 @@ def optimize_model():
     for param in policy_net.parameters():
         param.grad.data.clamp_(-1, 1)
     optimizer.step()
-
+##################################################################################################################
 
 ############# THE GAME #############
 
@@ -299,7 +301,7 @@ LOSSES = []
 num_episodes = 50 #num games
 comp_scores = []
 user_scores = []
-
+#############################################################################################################
 # Iterate for each game
 for i_episode in range(num_episodes):
 
@@ -350,7 +352,7 @@ for i_episode in range(num_episodes):
     # Update the target network, copying all weights and biases in DQN
     if i_episode % TARGET_UPDATE == 0:
         target_net.load_state_dict(policy_net.state_dict())
-
+#################################################################################################################
 
 print('Complete')
 
@@ -378,7 +380,7 @@ print(LOSSES)
 
 # Stuff below here is for analysis only!!! 
 # This section plays the game against the final network to see how good it is.
-
+#########################################################################################################
 def new_select_action(state, env):
     with torch.no_grad():
             policynet = policy_net(state)
@@ -395,7 +397,7 @@ def new_select_action(state, env):
                 policymax = np.random.choice(64, p=policynet)
 
             return torch.tensor([[policymax]], device=device, dtype=torch.long)
-
+#############################################################################################################
 def new_evaluate_model(iterations):
     
     policy_net.load_state_dict(torch.load('state_dict_final.pyt'))
@@ -449,5 +451,5 @@ def new_evaluate_model(iterations):
     print("AI stdev was " + str(standard_deviation) )
 
     print(user_scores)
-
+#######################################################################################################################
 new_evaluate_model(100)
