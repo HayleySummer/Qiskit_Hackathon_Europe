@@ -1,5 +1,11 @@
 # Beat the Quantum Machine: 
 
+
+QNN: 
+Quantum Neural Network
+
+Short Description
+
 Short Description of the Project and Repo's Structure
 
 The final submission should include:
