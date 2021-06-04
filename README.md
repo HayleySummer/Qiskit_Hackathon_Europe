@@ -1,23 +1,12 @@
 # Beat the Quantum Machine: 
 
+This repository is part of the Qiskit hackathon Europe. 
+You'll find the following folders: 
 
-QNN: 
-Quantum Neural Network
+Game -> Contains the Othello Game written in Python.
+Notebooks -> Contains Qiskit implementations of the board to image representation  
+Proposal -> Contains the Proposal for the Hackathon phase 1 
+Project Report -> Contains a Summary of the project
+QNN -> Contains the Quantum Hybrid Network 
 
-Short Description
-
-Short Description of the Project and Repo's Structure
-
-The final submission should include:
-
-- [ ] Scientific report -> 2-3 pages in pdf format, including:
- - [X]  Motivation (Which research questions do you want to address with this project?)
- - [X]  Implementation (What was your strategy to answer those questions? How did you divide the tasks among your teammates?)
- - [X]  Project results (What did you achieve?)
- - [x]  Impact-outlook (Which value does this project bring? What are the future perspectives? What still needs to be done?)
- - [ ] GitHub repo: Structured & easily readable.
-
-- [x]  Please comment the code as much as you can. As an example, you may want to have a look at the style guide that we use for Qiskit contributions.
-- [ ]  To enforce a consistent code style in the project, we use Pylint and pycodesytle to verify that code contributions conform to and respect the project’s style guide.
-- [ ]  To verify that your changes conform to the style guide, run: tox -elint
-- [X] 3-minute pre-recorded video presentation (Crisp summary of the scientific report)
+Each section has an own README file.
