@@ -5,11 +5,7 @@
 Run `model-simple-gpu.py` on a Linux Machine (preferebaly, the `.c` file causes some issues on Mac).
 All the files asociated with it need to be in same directory. 
 
-Dependencies you need to install beforehand:
-
-`pip install dependency`
-
-Dependencies: 
+Dependencies you need to install beforehand (for Linux Machines):
 
 ```pip install sklearn
    pip install matplotlib
