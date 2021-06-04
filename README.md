@@ -4,6 +4,8 @@
 
 ## About the Project
 Games are an interesting test bed for artificial intelligence research, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples of algorithms that were put through their paces in games before applying them to different problems.
+
+
 Othello is a perfect information, zero-sum, two-player strategy game played on an 8x8 board, and has already been used in classical artificial intelligence research. The board stages are highly volatile, each new move can change a large area of the board. Despite its simple rules, the game of Othello is not trivial, containing of approximately 10^28 legal positions.
 
 
@@ -12,7 +14,19 @@ We propose the implementation of a Quantum Othello game using quantum computing 
 
 ## QNN Outline
 
+Our Approach uses Reinforcement learning powered by Quantum Mechanics controlled by Qiskit. We have designed a Hybrid Quantum Neural Network finding the best spot to place tiles in the game of Othello. In this approach, our Quantum Neural Network, or QNN, consists of 5 different Layers.
 
+* The Input Layer (recieves the 8x8 Othello Board in a tensor torch format. It also recieves information about the current state, the action taken, rewards and it evaluates the next state)
+
+* The Convolutional Layer (used to convolute the input and pass it to the next layer)
+
+* The Fully Connected Layer (recieves the batch normalisation of the Convolutional Layer and connects all nodes of the Convolutional Layer with the Quantum Layer)
+
+* The Quantum Layer (maps the segments of the board to 4 Qubits. A classical approach is then used to evaluate the allowed moves in that segment.)
+
+* The Output Layer (performs optimisation routines and returns the values to the board)
+
+We have mainly used Pytorch for machine learning and Qiskit for adding the Quantum layer in our game. 
 
 ![alt text](https://github.com/HayleySummer/Qiskit_Hackathon_Europe/blob/main/Project%20Report/Pictures/Nodes.png "QNN Nodes")
 
