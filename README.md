@@ -2,6 +2,10 @@
 
 This repository is part of the Qiskit Hackathon Europe. 
 
+##About the Project
+
+## Structure
+that implementations 1 and 3 come with python scripts, while implementation 2 consists of Jupyter Notebooks.
 You'll find the following parts: 
 
 * Game -> Contains the Othello Game written in Python.
@@ -13,3 +17,4 @@ You'll find the following parts:
 
 Each section has an own README file.
 
+##Dependencies
