@@ -13,6 +13,9 @@ We propose the implementation of a Quantum Othello game using quantum computing 
 ## QNN Outline
 
 
+
+![alt text](https://github.com/HayleySummer/Qiskit_Hackathon_Europe/blob/main/Project%20Report/Pictures/Nodes.png "QNN Nodes")
+
 ## Dependencies
 
 Run `model-simple-gpu.py` in the QNN Folder (preferebaly on a Linux Machine, the `.c` file causes some issues on Mac).
