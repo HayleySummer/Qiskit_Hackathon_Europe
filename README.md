@@ -10,3 +10,5 @@ You'll find the following folders:
 * QNN -> Contains the Quantum Hybrid Network 
 
 Each section has an own README file.
+
+You can find the project video here: https://www.powtoon.com/c/fQej7mYq04Z/1/m 
