@@ -3,6 +3,8 @@
 # Team Beat the Quantum Machine
 *Reinforcement Learning powered by Quantum Mechanics and controlled by Qiskit*
 
+
+
 ## About the Project
 Games are an interesting test bed for artificial intelligence research, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples of algorithms that were put through their paces in games before applying them to different problems.
 
