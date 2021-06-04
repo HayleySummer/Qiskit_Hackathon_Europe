@@ -58,7 +58,7 @@ In this repository you'll find the following parts:
 | Proposal | Contains the Proposal for the Hackathon Phase 1      |
 | Project Report  |  Contains a Summary of the Project      |
 | Notebooks |  Contains a backup of the first Qiskit implementations of the board to image representation     |
-| Video |  Video Representation](https://www.powtoon.com/c/fQej7mYq04Z/1/m )     |
+| Video |  Video Representation (https://www.powtoon.com/c/fQej7mYq04Z/1/m)      |
 
 Each section has an own README file.
 Our approach is designed following modular principles. The individual components can thus be flexibly adapted to the needs of the Qiskit Community. 
