@@ -48,8 +48,8 @@ Dependencies you need to install beforehand (for Linux Machines):
    pip install qiskit[all]
 ```
 
-## Structure
-Our approach is In this folder you'll find the following parts: 
+## GitHub Structure
+In this repository you'll find the following parts: 
 
 | Folder        | Contains      | 
 | ------------- |-------------|
