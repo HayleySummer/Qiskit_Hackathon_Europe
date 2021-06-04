@@ -1,6 +1,6 @@
 # Video Transcript
 
-This is a transcript of the  Video Representation](https://www.powtoon.com/c/fQej7mYq04Z/1/m ) :
+This is a transcript of the [Video Representation](https://www.powtoon.com/c/fQej7mYq04Z/1/m ) :
 
 Welcome to Beat the Quantum Machine in the IBM Qiskit Hackathon Europe
 
