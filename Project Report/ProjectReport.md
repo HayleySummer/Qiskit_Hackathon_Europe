@@ -32,7 +32,7 @@ For the game of Othello two Deep-Q-Learning methods are applicable:
 
 The Tabular Q-Learning approach is not practical for large state spaces or a large number of actions. In the case of Othello, there are too many states for this method, which must be recorded and for which approximate values must be calculated.
 
-Deep-Q-Network addresses these difficulties and is therefore used in this approach as it have Q-learning with neural networks. 
+Deep-Q-Network addresses these difficulties and is therefore used in this approach as it have Q-learning with neural networks.
 
 Q-Learning Theory:
 Is a technique that determines, based on a state-action-value-(reward) function, the value of performing an action or the quality of a state-action combination. The so-called Q-function takes as input the current state and a possible action and calculates the potential reward for this action and all following actions. More precisely, this is called *Temporal Difference Learning*, which adjusts the estimate of the future total reward per step.
@@ -41,13 +41,7 @@ Is a technique that determines, based on a state-action-value-(reward) function,
 
 ## Implementation
 
-### Key Classes and Data Structure
-
-### CNN
-
-We have decided to build on the shoulders of giants and therefore looked for a neural network approach that we can suitably extend with a quantum layer in order to create a hybrid Quantum Classical Neural Network. After a thorough research we decided to use the approach of \[1\], because it used exactly the structure that is suitable for Othello and could be used in Deep Q Reinforcement Learning.
-The architectural structure is shown in figure X.
-
+There are many parts in which this all project is divided into.It is not necessary only one team is handling one particular part All team members support each other.In specific the machine learning is handled by Enda Cahill and Nouhaila Innan, The Quantum Machine learning part is managed by David Peral, Enda Cahill and Nouhaila Innan, The usage of Qiskit in this project is handled by Divyanshu Singh.And last but not the least The Documentation part is handled by Barbora Hrda and Divyanshu Singh.
 We wanted to extend this neural network with a quantum layer in order to use the computational power of the quantum computers to speed up the computation on the one hand and to investigate the results that this hybrid quantum network should deliver on the other hand.
 
 Parameters:
@@ -72,6 +66,9 @@ The approach showed that is is possible to start on classical machine learning t
 
 ## Further Work
 
+##### Which value does this project bring?
+The value is a project the qiskit community can use in order to try out different hybrid ML approaches in a environment with predefined rules and get to learn about how to apply these algorithms in different areas other than enhanching game development
+stratigies.
 Proposal:
 The general applicability and flexibility of reinforcement learning comes at a price. The biggest obstacle to reinforcement learning in this game setting is that rewards for an action may be delayed considerably. In Othello, as well as in chess, a single strong move in the middle of the game can be game-changing. In learning, we need to recognise such things, which can be difficult when we focus purely on the game play and actions. In future Work the sum of future discounted rewards should be taken more into consideration.
 Also, the debugging in novel hybrid approaches, as we describe here, has to be done thoroughly and is therefore time-consuming. At this point, it is definitively worthwhile to go troubleshooting again to bring the Quantum Opponent to life.
@@ -81,6 +78,6 @@ Also more finding
 #Bibliography
 \[1\] https://github.com/colinmsnow/othelloAI
 
-\[2\] https://pytorch.org/tutorials/intermediate/reinforcement\_q\_learning.html
+\[2\] [https://pytorch.org/tutorials/intermediate/reinforcement\_q\_learning.html](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 
 \[3\] https://www.nature.com/articles/nature14236
