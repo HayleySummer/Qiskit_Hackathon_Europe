@@ -3,7 +3,7 @@
 #### Prerequisits: 
 
 Run `model-simple-gpu.py` on a Linux Machine (preferebaly, the `.c` file causes some issues on Mac).
-All the files asociated with it need be in same directory. 
+All the files asociated with it need to be in same directory. 
 
 Dependencies you need to install beforehand:
 
