@@ -13,6 +13,14 @@ The Quantum opponent creates winning strategies using a Variational Quantum Circ
 ## Structure
 Our approach is In this folder you'll find the following parts: 
 
+| Folder        | Contains      | 
+| :-------------: |:-------------:|
+| Game       | Othello Game written in Python. Can be used for various Quantum ML approaches |
+| QNN     | Quantum Neural Network presented in the Project Report     |
+| Proposal | Contains the Proposal for the Hackathon Phase 1      |
+| Project Report  |  Contains a Summary of the Project      |
+| Notebooks |  Contains a backup of the first Qiskit implementations of the board to image representation     |
+
 * Game -> Contains the Othello Game written in Python. Can be used for various Quantum ML approaches. 
 * QNN -> Contains the Quantum Neural Network presented in the Project Report
 * Proposal -> Contains the Proposal for the Hackathon Phase 1 
@@ -22,6 +30,9 @@ Our approach is In this folder you'll find the following parts:
 
 Each section has an own README file.
 Our approach is designed following modular principles. The individual components can thus be flexibly adapted to the needs of the Qiskit Community. 
+
+## QNN Outline
+
 
 ## Dependencies
 
