@@ -11,9 +11,9 @@ Dependencies you need to install beforehand:
 
 Dependencies: 
 
-* sklearn
-* matplotlib
-* torch 
-* torchinfo
-* torchvision
-* qiskit[all]
+```pip install sklearn
+   pip install matplotlib
+   pip install torch 
+   pip install torchinfo
+   pip install torchvision
+   pip install qiskit[all]
