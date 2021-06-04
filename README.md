@@ -1,6 +1,6 @@
 # Beat the Quantum Machine: 
 
-This repository is part of the Qiskit hackathon Europe. 
+This repository is part of the Qiskit Hackathon Europe. 
 
 You'll find the following parts: 
 
