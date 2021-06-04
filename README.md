@@ -1,6 +1,7 @@
 # Beat the Quantum Machine: 
 
-This repository is part of the Qiskit Hackathon Europe. 
+
+![alt text](https://github.com/HayleySummer/Qiskit_Hackathon_Europe/blob/main/Hackathon.jpeg "Qiskit Hackathon")
 
 ## About the Project
 Games are an interesting test bed for artificial intelligence research, as they provide a self-contained environment with fixed rules. DeepBlue, Watson and AlphaGo are only a few examples of algorithms that were put through their paces in games before applying them to different problems.
