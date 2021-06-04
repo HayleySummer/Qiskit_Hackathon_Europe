@@ -17,4 +17,16 @@ You'll find the following parts:
 
 Each section has an own README file.
 
-##Dependencies
+## Dependencies
+
+Run `model-simple-gpu.py` in the QNN Folder (preferebaly on a Linux Machine, the `.c` file causes some issues on Mac).
+All the files asociated with it need to be in same directory. 
+
+Dependencies you need to install beforehand (for Linux Machines):
+
+```pip install sklearn
+   pip install matplotlib
+   pip install torch 
+   pip install torchinfo
+   pip install torchvision
+   pip install qiskit[all]
