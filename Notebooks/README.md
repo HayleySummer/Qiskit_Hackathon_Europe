@@ -1,5 +1,5 @@
 ### About this Folder
-This Folder Comprises of Other Approach of Achiveing the goal of this Project. 
+This folder archives the first Qiskit approaches of achiveing the goal of this project. 
 
 * `Grover-3x3-Valid Moves.ipynb` contains notebooks covering the Grover's algrothimn approach of solving the Othelo Problem.
 * `board_to_image.ipynb` is about the representation of Othelo game on different given data sets.
