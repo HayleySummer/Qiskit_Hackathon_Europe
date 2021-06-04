@@ -12,9 +12,9 @@ Othello is a perfect information, zero-sum, two-player strategy game played on a
 We propose the implementation of a Quantum Othello game using quantum computing together with classical machine learning techniques to create a (self-improving) computer opponent players can compete against. Othello is also seen as a Markov Decision Problem in reinforcement learning. In addition, the mixed application of Convolutional Neural Networks result in a better accuracy predicting moves. The Quantum opponent creates winning strategies using a Variational Quantum Circuit for Deep Reinforcement Learning. The implementation utilises PyTorch to train a Deep Q-Learning Neural Network with a Quantum Computing based hidden layer.
 
 
-## QNN Outline
+## The Approach
 
-Our Approach uses Reinforcement learning powered by Quantum Mechanics controlled by Qiskit. We have designed a Hybrid Quantum Neural Network finding the best spot to place tiles in the game of Othello. In this approach, our Quantum Neural Network, or QNN, consists of 5 different Layers.
+Our approach uses Reinforcement learning powered by Quantum Mechanics controlled by Qiskit. We have designed a Hybrid Quantum Neural Network finding the best spot to place tiles in the game of Othello. In this approach, our Quantum Neural Network, or QNN, consists of 5 different Layers.
 
 * The Input Layer (recieves the 8x8 Othello Board in a tensor torch format. It also recieves information about the current state, the action taken, rewards and it evaluates the next state)
 
